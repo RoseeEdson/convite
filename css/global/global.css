@@ -114,9 +114,8 @@ a {
   }
 
   .grid-container {
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px; /* Altura fixa para cada linha */
     gap: 10px; /* Espaço entre as imagens */
     margin: 2px; /*
   }
