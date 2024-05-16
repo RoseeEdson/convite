@@ -1,0 +1,164 @@
+:root {
+ 
+  --cor-primaria: #FFD4DB; 
+  --cor-segundaria: #E5C5BB;
+
+}
+
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #FCF7F3;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+
+/* 7 Adicione o CSS Essencial abaixo */
+
+.js [data-anime] {
+    opacity: 0;
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
+
+
+/* 5 Adicione o CSS Essencial abaixo */
+[data-slide] {
+    position: relative;
+  }
+  [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+  [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+    z-index: 1;
+  }
+  
+  /* 6 CSS recomendado para a navegação */
+  [data-slide-nav] {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  [data-slide-nav] > button {
+    display: inline-block;
+    width: 12px;
+    margin: 4px;
+    height: 12px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    background: #606060;
+    text-indent: -120px;
+    overflow: hidden;
+  }
+  [data-slide-nav] > button.active {
+    background: #26ABB4;
+  }
+  
+  footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--cor-segundaria) ;
+  text-align: center;
+  color:white;
+  cursor: pointer;
+  }
+
+  .home{
+    overflow: hidden;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px; /* Altura fixa para cada linha */
+    gap: 10px; /* Espaço entre as imagens */
+    margin: 2px; /*
+  }
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre as imagens */
+  }
+  .grid-item.quatro img{
+    object-position: top;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem preencha completamente seu contêiner */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+  }
+
+  .modal {
+    display: none; /* Por padrão, a modal está escondida */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Define o tamanho máximo da largura da modal */
+    max-height: 80%; /* Define o tamanho máximo da altura da modal */
+    padding: 5px;
+  }
+  .modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem */
+    
+  }
