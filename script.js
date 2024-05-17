@@ -167,7 +167,7 @@ document.querySelector('.copy-button').addEventListener('click', function () {
 function openModalFoto(imgSrc) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("img01");
-  modal.style.display = "block";
+  modal.style.display = "flex";
   modalImg.src = imgSrc;
 }
 
@@ -175,3 +175,13 @@ function openModalFoto(imgSrc) {
 document.getElementsByClassName("close")[0].onclick = function() {
   document.getElementById("myModal").style.display = "none";
 }
+
+
+// Fechar o modal quando o usuário clicar fora dele
+window.onclick = function (event) {
+  if (event.target.classList.contains('modal-fotos')) {
+    event.target.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+};
+

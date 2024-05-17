@@ -114,7 +114,7 @@ a {
   }
 
   .grid-container {
-   display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px; /* Espaço entre as imagens */
     margin: 2px; /*
@@ -136,7 +136,9 @@ a {
     object-position: center; /* Centraliza a imagem dentro do contêiner */
   }
 
-  .modal {
+
+
+  .modal-fotos {
     display: none; /* Por padrão, a modal está escondida */
     position: fixed;
     z-index: 999;
@@ -144,11 +146,21 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     overflow: auto;
+    background-color: rgba(239, 204, 222, 0.9);
+  }
+
+  .modal-fotos .close{
+   position: absolute;
+   bottom: 40px;
+   color: var(--cor-primaria) !important;
+   background-color: white !important;
     
   }
-  .modal-content {
+  .modal-fotos-content {
     margin: auto;
     display: block;
     max-width: 80%; /* Define o tamanho máximo da largura da modal */
