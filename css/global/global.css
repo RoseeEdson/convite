@@ -155,7 +155,7 @@ a {
 
   .modal-fotos .close{
    position: absolute;
-   bottom: 40px;
+   bottom: 20px;
    color: var(--cor-primaria) !important;
    background-color: white !important;
     
