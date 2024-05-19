@@ -163,25 +163,3 @@ document.querySelector('.copy-button').addEventListener('click', function () {
 });
 
 
-// Função para abrir a modal com a imagem em tamanho grande
-function openModalFoto(imgSrc) {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("img01");
-  modal.style.display = "flex";
-  modalImg.src = imgSrc;
-}
-
-// Função para fechar a modal ao clicar no botão de fechar (X)
-document.getElementsByClassName("close")[0].onclick = function() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-
-// Fechar o modal quando o usuário clicar fora dele
-window.onclick = function (event) {
-  if (event.target.classList.contains('modal-fotos')) {
-    event.target.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-};
-

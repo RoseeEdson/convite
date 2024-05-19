@@ -1,6 +1,6 @@
 :root {
  
-  --cor-primaria: #FFD4DB; 
+  --cor-primaria: #E3C5BA; 
   --cor-segundaria: #E5C5BB;
 
 }
@@ -113,63 +113,3 @@ a {
     overflow: hidden;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px; /* Espaço entre as imagens */
-    margin: 2px; /*
-  }
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer; /* Cursor de ponteiro ao passar sobre as imagens */
-  }
-  .grid-item.quatro img{
-    object-position: top;
-  }
-  .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Faz com que a imagem preencha completamente seu contêiner */
-    object-position: center; /* Centraliza a imagem dentro do contêiner */
-  }
-
-
-
-  .modal-fotos {
-    display: none; /* Por padrão, a modal está escondida */
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: auto;
-    background-color: rgba(239, 204, 222, 0.9);
-  }
-
-  .modal-fotos .close{
-   position: absolute;
-   bottom: 20px;
-   color: var(--cor-primaria) !important;
-   background-color: white !important;
-    
-  }
-  .modal-fotos-content {
-    margin: auto;
-    display: block;
-    max-width: 80%; /* Define o tamanho máximo da largura da modal */
-    max-height: 80%; /* Define o tamanho máximo da altura da modal */
-    padding: 5px;
-  }
-  .modal-content img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Mantém a proporção da imagem */
-    
-  }
